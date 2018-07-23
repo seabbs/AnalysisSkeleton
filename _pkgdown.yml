@@ -1,0 +1,15 @@
+title: "AnalysisSkeleton"
+url: https://samabbott.co.uk/AnalysisSkeleton
+template:
+  params:
+    bootswatch: lumen
+
+
+  right:
+    - icon: fa-file-code-o 
+      text: "Functions"
+      href: reference/index.html
+    - icon: fa-github fa-lg
+      text: "Github"
+      href: https://github.com/seabbs/AnalysisSkeleton
+      

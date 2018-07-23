@@ -1,0 +1,40 @@
+---
+output: github_document
+---
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# AnalysisSkeleton
+
+## Aim
+
+## Background
+
+## Methods
+
+## Results
+
+## Conclusions
+
+# Docker
+
+This analysis was developed in a docker container based on the tidyverse docker image. To run the docker image run:
+
+```{bash, eval = FALSE}
+docker run -d -p 8787:8787 --name AnalysisSkeleton -e USER=AnalysisSkeleton -e PASSWORD=AnalysisSkeleton seabbs/analysisskeleton
+```
+
+The rstudio client can be found on port :8787 at your local machines ip. The default username:password is AnalysisSkeleton:AnalysisSkeleton, set the user with -e USER=username, and the password with - e PASSWORD=newpasswordhere. The default is to save the analysis files into the user directory.
+
+If you have access to the required underlying raw data then the entire analysis can be reproduced from scratch by adding the following to the `docker run` command, with the data saved into `data/analysis-skeleton`.
+
+```{bash, eval = FALSE}
+--mount type=bind,source=$(pwd)/data/analysis-skeleton,target=/home/AnalysisSkeleton/data/analysis-skeleton
+```
+

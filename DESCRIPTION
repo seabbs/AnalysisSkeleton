@@ -1,0 +1,32 @@
+Package: AnalysisSkeleton
+Type: Package
+Version: 0.1.0
+Title: Package Skeleton for Reproducible Analysis
+Authors@R: c(person("Sam Abbott", role = c("aut", "cre"),
+                     email = "contact@samabbott.co.uk",
+                     comment = c(ORCID = "0000-0001-8057-8037")))
+Description:  A repository containing an analysis skeleton based around an R package framework
+License: MIT | file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 3.2.0)
+Imports: magrittr
+Suggests: testthat,
+    devtools,
+    pkgdown,
+    knitr,
+    rmarkdown,
+    tidyverse,
+    prettypublisher,
+    brms, 
+    h2o
+Remotes: seabbs/prettypublisher,
+    r-lib/pkgdown,
+    paul-buerkner/brms
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.0.1
+URL: http://www.samabbott.co.uk/AnalysisSkeleton,
+        https://github.com/seabbs/AnalysisSkeleton
+BugReports: https://github.com/seabbs/AnalysisSkeleton/issues
+VignetteBuilder: knitr
