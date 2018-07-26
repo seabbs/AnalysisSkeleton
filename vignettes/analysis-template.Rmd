@@ -1,0 +1,48 @@
+---
+title: "Analysis Template"
+author: ""
+csl: resources/bmj.csl
+output:
+  html_document: default
+  pdf_document: default
+
+bibliography: resources/library.bib
+vignette: >
+  %\VignetteIndexEntry{Analysis Template}
+  %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  echo = FALSE,
+  comment = "#>",
+  message = FALSE,
+  warning = FALSE,
+  dpi = 320,
+  fig.height = 8,
+  fig.width = 8
+)
+```
+
+
+```{r packages, include=FALSE}
+library(tidyverse)
+library(AnalysisSkeleton)
+```
+
+
+# Aim
+
+# Introduction
+
+# Methods
+
+# Results
+
+# Discussion
+
+# References
+
+<div id = 'refs'></div>

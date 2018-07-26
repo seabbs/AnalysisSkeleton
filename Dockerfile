@@ -16,3 +16,5 @@ ADD . /home/rstudio/AnalysisSkeleton
 WORKDIR /home/rstudio/AnalysisSkeleton
 
 RUN Rscript -e 'install.packages("packrat"); packrat::restore()'
+
+RUN Rscript -e 'tinytex::install_tinytex()'

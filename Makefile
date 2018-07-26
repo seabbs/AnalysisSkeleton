@@ -1,8 +1,6 @@
 
 default: all
 
-DOCS = $(wildcard docs/*)
-
 all: build_data build_package build_vignettes README.md build_site
 
 #Update data

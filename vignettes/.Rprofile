@@ -1,1 +1,1 @@
-source("../.Rprofile")
+source("../packrat/init.R")
